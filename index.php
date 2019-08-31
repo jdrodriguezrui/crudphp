@@ -15,14 +15,14 @@
                 <h1 class="mx-auto">Todo List</h1>
                 <button type="button" class="btn btn-success">Add task</button>
                 <button type="button" class="btn btn-default pull-right">Print</button>
-                <div class="col-md-10 col-md-offset-1"></div>
-                <table>
-                    <thead>
-                        <th>No.</th>
-                        <th>Task</th>
-                        
-                    </thead>
-                </table>
+                <div class="col-md-10 col-md-offset-1">
+                    <table>
+                        <thead>
+                            <th>No.</th>
+                            <th>Task</th>                            
+                        </thead>
+                    </table>
+                </div>                
             </div>
         </div>    
 
