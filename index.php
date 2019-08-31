@@ -12,9 +12,17 @@
     <body>
         <div class="container">
             <div class="row">
-                <h1>Todo List</h1>
-                <div class="col-md-10"></div>
-                Holi, this is just a test
+                <h1 class="mx-auto">Todo List</h1>
+                <button type="button" class="btn btn-success">Add task</button>
+                <button type="button" class="btn btn-default pull-right">Print</button>
+                <div class="col-md-10 col-md-offset-1"></div>
+                <table>
+                    <thead>
+                        <th>No.</th>
+                        <th>Task</th>
+                        
+                    </thead>
+                </table>
             </div>
         </div>    
 
