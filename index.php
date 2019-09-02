@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php include 'db.php'; ?>
 <html>
     <head>
         <title>Crud App Test</title>
