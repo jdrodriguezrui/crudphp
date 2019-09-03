@@ -29,7 +29,7 @@
                         <?php while($row = $rows->fetch_assoc()): ?>
                             <tr>                            
                                 <th><?php echo $row['id']?></th>
-                                <td><?php echo $row['name']?></td>
+                                <td class="col-md-10"><?php echo $row['name']?></td>
                                 <td><a href="" class="btn btn-success" data-target="#myModal" data-toggle="modal">Edit</a></td>
                                 <td><a href="" class="btn btn-danger">Delete</a></td>
                             </tr>
@@ -47,7 +47,7 @@
                             <h4 class="modal-title">Edit task</h4>
                         </div>
                         <div class="modal-body">
-                            <form action="">
+                            <form method="post" action="add.php">
                                 <div class="form-group">
                                     <label for="">Task name</label>
                                     <input type="text" required name="task">
