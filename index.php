@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<?php include 'db.php'; ?>
+<?php include 'db.php';
+    $sql = "select * from TASKS";
+    $rows = $db->query($sql);
+?>
 <html>
     <head>
         <title>Crud App with DB</title>
@@ -19,11 +22,14 @@
                 <div class="col-md-10 col-md-offset-1">
                     <table>
                         <thead>
-                            <th>No.</th>
+                            <th>ID</th>
                             <th>Task</th>                            
                         </thead>
                         <tbody>
                             <tr>
+                            <?php while($row = $rows.fetch_assoc()): ?>
+                                <?php var_dump($row); ?>
+                            <?php endwhile; ?>
                                 <th>1</th>
                                 <td>Mark</td>
                                 <td><a href="" class="btn btn-success" data-target="#myModal" data-toggle="modal">Edit</a></td>
