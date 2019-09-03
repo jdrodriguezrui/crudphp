@@ -17,7 +17,7 @@
         <div class="container">
             <div class="row">
                 <h1 class="mx-auto">Todo List</h1>
-                <button type="button" class="btn btn-success">Add task</button>
+                <button type="button" class="btn btn-success" data-target="#addModal" data-toggle="modal">Add task</button>
                 <button type="button" class="btn btn-default pull-right">Print</button>
                 <div class="col-md-10 col-md-offset-1">
                     <table>
@@ -45,6 +45,30 @@
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                             <h4 class="modal-title">Edit task</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form method="post" action="">
+                                <div class="form-group">
+                                    <label for="">Task name</label>
+                                    <input type="text" required name="task">
+                                </div>
+                                <input type="submit" name="send" value="Send" class="btn btn-success">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="addModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Add task</h4>
                         </div>
                         <div class="modal-body">
                             <form method="post" action="add.php">
