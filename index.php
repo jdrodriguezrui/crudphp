@@ -28,12 +28,11 @@
                         <tbody>
                             <tr>
                             <?php while($row = $rows->fetch_assoc()): ?>
-                                <?php var_dump($row); ?>
-                            <?php endwhile; ?>
-                                <th>1</th>
-                                <td>Mark</td>
+                                <th><?php echo $row['id']?></th>
+                                <td><?php echo $row['name']?></td>
                                 <td><a href="" class="btn btn-success" data-target="#myModal" data-toggle="modal">Edit</a></td>
                                 <td><a href="" class="btn btn-danger">Delete</a></td>
+                            <?php endwhile; ?>
                             </tr>
                         </tbody>
                     </table>
