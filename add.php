@@ -7,7 +7,7 @@ if(isset($_POST['send'])){
     $val = $db->query($sql);
 
     if($val){
-        header('location: index.php')
+        header('location: index.php');
     }
 }
 
