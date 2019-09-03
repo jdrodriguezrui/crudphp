@@ -27,7 +27,7 @@
                         </thead>
                         <tbody>
                             <tr>
-                            <?php while($row = $rows.fetch_assoc()): ?>
+                            <?php while($row = $rows->fetch_assoc()): ?>
                                 <?php var_dump($row); ?>
                             <?php endwhile; ?>
                                 <th>1</th>
