@@ -26,14 +26,14 @@
                             <th>Task</th>                            
                         </thead>
                         <tbody>
-                            <tr>
-                            <?php while($row = $rows->fetch_assoc()): ?>
+                        <?php while($row = $rows->fetch_assoc()): ?>
+                            <tr>                            
                                 <th><?php echo $row['id']?></th>
                                 <td><?php echo $row['name']?></td>
                                 <td><a href="" class="btn btn-success" data-target="#myModal" data-toggle="modal">Edit</a></td>
                                 <td><a href="" class="btn btn-danger">Delete</a></td>
-                            <?php endwhile; ?>
                             </tr>
+                        <?php endwhile; ?>
                         </tbody>
                     </table>
                 </div>
